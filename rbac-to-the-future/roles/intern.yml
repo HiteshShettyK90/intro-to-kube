@@ -6,7 +6,7 @@ metadata:
 rules:
 # TODO:
 # target pods with verbs get, watch, list
-- apiGroups: ["", "extensions", "apps"]
+- apiGroups: [""]
   resources: ["pods","deployments"]
   verbs: ["get","watch","list"]
 ---
