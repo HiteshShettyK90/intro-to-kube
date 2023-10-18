@@ -7,3 +7,17 @@ spec:
   # TODO:
   # Define ingress
   # Define egress
+  ingress:
+    - from:
+      - namespaceSelector:
+          matchExpressions:
+          - key: namespace
+            operator: In
+            values: ["namspace-b"]
+  egress:
+    - to:
+      - namespaceSelector:
+          matchExpressions:
+          - key: namespace
+            operator: In
+            values: ["namspace-b","namespace-c"]
